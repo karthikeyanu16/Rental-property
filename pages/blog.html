@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Guides, Tenant Advice & Market Insights | Resida Rentals</title>
+  <meta name="description" content="Discover, compare, and lease verified residential rental properties with instant digital contracts, zero hidden fees, and dedicated resident concierge.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container flex-between items-center">
+      <div class="topbar-tools">
+        <span class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +1 (800) 555-NEST
+        </span>
+        <span class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          concierge@resida-rentals.com
+        </span>
+      </div>
+      <div class="topbar-tools">
+        <span>Verified Escrow Protection Guarantee</span>
+        <span class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          24/7 Tenancy Support
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../pages/index.html" class="brand-logo" aria-label="Resida Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="brand-text">Resida<span>.</span></span>
+        </a>
+
+        <!-- Main Navigation Links: Exactly 7 Clear Visible Items -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <a href="../pages/index.html" class="nav-link ">Home Page 1</a>
+          <a href="../pages/home-2.html" class="nav-link ">Home Page 2</a>
+          <a href="../pages/properties.html" class="nav-link ">Properties</a>
+          <a href="../pages/services.html" class="nav-link ">Services</a>
+          <a href="../pages/about.html" class="nav-link ">About</a>
+          <a href="../pages/blog.html" class="nav-link active">Blogs</a>
+          <a href="../pages/contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button id="rtl-toggle-btn" class="rtl-toggle-btn" title="Toggle Right-to-Left Layout" aria-label="Toggle RTL">RTL</button>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <span id="theme-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+          </button>
+          <a href="../pages/properties.html" class="btn btn-primary btn-sm header-cta">Explore Properties</a>
+          <button id="mobile-toggle-btn" class="mobile-toggle" aria-label="Open Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
+  <aside id="mobile-drawer" class="mobile-drawer">
+    <div class="flex-between items-center mb-6">
+      <span class="brand-text">Resida<span>.</span></span>
+      <button id="close-drawer-btn" class="btn-icon" aria-label="Close Navigation">✕</button>
+    </div>
+    <nav class="flex flex-col gap-2">
+      <a href="../pages/index.html" class="nav-link ">Home Page 1</a>
+      <a href="../pages/home-2.html" class="nav-link ">Home Page 2</a>
+      <a href="../pages/properties.html" class="nav-link ">Properties</a>
+      <a href="../pages/services.html" class="nav-link ">Services</a>
+      <a href="../pages/about.html" class="nav-link ">About</a>
+      <a href="../pages/blog.html" class="nav-link active">Blogs</a>
+      <a href="../pages/contact.html" class="nav-link ">Contact</a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="../pages/properties.html" class="btn btn-primary" style="width: 100%;">Explore Properties</a>
+    </div>
+  </aside>
+
+
+
+
+  <!-- Page Header -->
+  <section class="section-py" style="background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%); border-bottom: 1px solid var(--border-color); padding: 56px 0;">
+    <div class="container">
+      <div style="max-width: 760px;">
+        <div class="badge badge-primary mb-3">Resida Editorial & Advisory</div>
+        <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 16px; letter-spacing: -0.03em;">
+          Rental Living Insights & Tenant Rights
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.6;">
+          Expert guidance on leasing agreements, neighborhood appreciation, interior optimization, and tenant legal protections authored by licensed property solicitors and interior architects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Main Content -->
+  <section class="section-py">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="flex items-center gap-2 mb-8" style="overflow-x: auto; padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">
+        <button class="btn btn-primary btn-sm" style="white-space: nowrap;">All Insights (24)</button>
+        <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Tenant Legal Rights</button>
+        <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Market Trends</button>
+        <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Interior Optimization</button>
+        <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Landlord Best Practices</button>
+        <button class="btn btn-secondary btn-sm" style="white-space: nowrap;">Neighborhood Spotlights</button>
+      </div>
+
+      <!-- Featured Article Spotlight -->
+      <article class="card mb-12" style="border-radius: 16px; overflow: hidden; display: grid; grid-template-columns: 1.2fr 1fr; gap: 0; box-shadow: var(--shadow-md);">
+        <div style="position: relative; height: 100%; min-height: 380px;">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Executive study lounge with architectural guides" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; top: 20px; left: 20px;">
+            <span class="badge badge-primary">Featured Analysis</span>
+          </div>
+        </div>
+        <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="flex items-center gap-3 mb-3 text-sm" style="color: var(--text-muted);">
+            <span>Market Advisory</span>
+            <span>•</span>
+            <span>8 min read</span>
+            <span>•</span>
+            <span>September 24, 2026</span>
+          </div>
+          <h2 style="font-size: 1.85rem; font-weight: 700; line-height: 1.3; margin-bottom: 16px; letter-spacing: -0.02em;">
+            The 2026 Urban Rental Forecast: Why Flexible Multi-Year Leases Are Outperforming Fixed Terms
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+            Our quarterly analysis of 45,000 metropolitan tenancies reveals a structural shift toward lease agility, transparent utility escrow, and institutional concierge amenities.
+          </p>
+          <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80" alt="Elena Rostova, Chief Research Analyst" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;">
+            <div>
+              <div style="font-weight: 600; font-size: 0.95rem;">Elena Rostova</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Chief Research Analyst, Resida Intelligence</div>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm" style="margin-left: auto;">Read Deep Dive →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-3 gap-6 mb-12">
+
+        <!-- Article 1: Legal / Deposit -->
+        <article class="card flex flex-col" style="border-radius: 14px; overflow: hidden;">
+          <div style="position: relative; height: 220px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Legal tenancy contract signing on walnut desk" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; top: 14px; left: 14px;">
+              <span class="badge" style="background: rgba(15, 23, 42, 0.75); color: #fff; backdrop-filter: blur(4px);">Legal Rights</span>
+            </div>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div class="flex items-center gap-2 mb-2 text-xs" style="color: var(--text-muted);">
+              <span>5 min read</span>
+              <span>•</span>
+              <span>Sep 18, 2026</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px;">
+              Security Deposit Withholding: Legitimate Deductions vs. Fair Wear & Tear
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 20px;">
+              Learn exactly which property alterations qualify as normal aging versus damage, backed by statutory escrow protection rules.
+            </p>
+            <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&h=100&q=80" alt="Marcus Vance, Tenancy Solicitor" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover;">
+              <div style="font-size: 0.85rem; font-weight: 600;">Marcus Vance</div>
+              <span style="margin-left: auto; color: var(--primary); font-size: 0.85rem; font-weight: 600;">Read →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2: Interior Sunlight -->
+        <article class="card flex flex-col" style="border-radius: 14px; overflow: hidden;">
+          <div style="position: relative; height: 220px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Sun-drenched Scandinavian minimalist apartment loft" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; top: 14px; left: 14px;">
+              <span class="badge" style="background: rgba(15, 23, 42, 0.75); color: #fff; backdrop-filter: blur(4px);">Design & Living</span>
+            </div>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div class="flex items-center gap-2 mb-2 text-xs" style="color: var(--text-muted);">
+              <span>6 min read</span>
+              <span>•</span>
+              <span>Sep 12, 2026</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px;">
+              Urban Micro-Lofts: 8 Architectural Hacks to Maximize Natural Daylight
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 20px;">
+              Optical mirror alignments, sheer linen diffusion, and multi-tier lighting palettes to transform compact floor plans into luminous retreats.
+            </p>
+            <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&h=100&q=80" alt="Chloe Bennett, Spatial Architect" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover;">
+              <div style="font-size: 0.85rem; font-weight: 600;">Chloe Bennett</div>
+              <span style="margin-left: auto; color: var(--primary); font-size: 0.85rem; font-weight: 600;">Read →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3: Waterfront vs Downtown -->
+        <article class="card flex flex-col" style="border-radius: 14px; overflow: hidden;">
+          <div style="position: relative; height: 220px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Modern waterfront residential promenade and marina" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; top: 14px; left: 14px;">
+              <span class="badge" style="background: rgba(15, 23, 42, 0.75); color: #fff; backdrop-filter: blur(4px);">Neighborhoods</span>
+            </div>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div class="flex items-center gap-2 mb-2 text-xs" style="color: var(--text-muted);">
+              <span>7 min read</span>
+              <span>•</span>
+              <span>Aug 29, 2026</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px;">
+              Harborfront vs. Financial District: Noise, Transit & Rental Premiums
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 20px;">
+              We break down acoustic decibel maps, commute delta times, and weekend livability scores across key coastal residential clusters.
+            </p>
+            <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+              <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=100&h=100&q=80" alt="Elena Rostova" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover;">
+              <div style="font-size: 0.85rem; font-weight: 600;">Elena Rostova</div>
+              <span style="margin-left: auto; color: var(--primary); font-size: 0.85rem; font-weight: 600;">Read →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4: Lease Negotiation -->
+        <article class="card flex flex-col" style="border-radius: 14px; overflow: hidden;">
+          <div style="position: relative; height: 220px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Tenancy advisory consultation in contemporary boardroom" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; top: 14px; left: 14px;">
+              <span class="badge" style="background: rgba(15, 23, 42, 0.75); color: #fff; backdrop-filter: blur(4px);">Negotiation</span>
+            </div>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div class="flex items-center gap-2 mb-2 text-xs" style="color: var(--text-muted);">
+              <span>9 min read</span>
+              <span>•</span>
+              <span>Aug 15, 2026</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px;">
+              The 60-Day Renewal Window: How to Lock In Favorable Extension Rates
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 20px;">
+              A step-by-step negotiation protocol leveraging verified rent comps, punctuality scorecards, and multi-year commitment discounts.
+            </p>
+            <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&h=100&q=80" alt="Marcus Vance" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover;">
+              <div style="font-size: 0.85rem; font-weight: 600;">Marcus Vance</div>
+              <span style="margin-left: auto; color: var(--primary); font-size: 0.85rem; font-weight: 600;">Read →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5: Pet Living -->
+        <article class="card flex flex-col" style="border-radius: 14px; overflow: hidden;">
+          <div style="position: relative; height: 220px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=80" alt="Modern clean apartment with pet friendly amenities" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; top: 14px; left: 14px;">
+              <span class="badge" style="background: rgba(15, 23, 42, 0.75); color: #fff; backdrop-filter: blur(4px);">Pet Friendly</span>
+            </div>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div class="flex items-center gap-2 mb-2 text-xs" style="color: var(--text-muted);">
+              <span>4 min read</span>
+              <span>•</span>
+              <span>Aug 04, 2026</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px;">
+              Pet-Friendly Tenancies: Clauses Every Cat and Dog Parent Must Verify
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 20px;">
+              Navigate pet resumes, pet rent surcharges, and soundproofing stipulations to secure premium properties without friction.
+            </p>
+            <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=100&h=100&q=80" alt="Chloe Bennett" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover;">
+              <div style="font-size: 0.85rem; font-weight: 600;">Chloe Bennett</div>
+              <span style="margin-left: auto; color: var(--primary); font-size: 0.85rem; font-weight: 600;">Read →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6: Smart Home -->
+        <article class="card flex flex-col" style="border-radius: 14px; overflow: hidden;">
+          <div style="position: relative; height: 220px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Smart home touch automation interface mounted on architectural wall" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; top: 14px; left: 14px;">
+              <span class="badge" style="background: rgba(15, 23, 42, 0.75); color: #fff; backdrop-filter: blur(4px);">Smart Living</span>
+            </div>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
+            <div class="flex items-center gap-2 mb-2 text-xs" style="color: var(--text-muted);">
+              <span>5 min read</span>
+              <span>•</span>
+              <span>Jul 22, 2026</span>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.35; margin-bottom: 12px;">
+              Connected Apartments: Smart Locks, Thermostats & Infrastructure Liability
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 20px;">
+              Demystifying IoT protocols in residential leases: battery maintenance, firmware updates, and cybersecurity rights for occupants.
+            </p>
+            <div class="flex items-center gap-3 mt-auto pt-4" style="border-top: 1px solid var(--border-color);">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=100&h=100&q=80" alt="Elena Rostova" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover;">
+              <div style="font-size: 0.85rem; font-weight: 600;">Elena Rostova</div>
+              <span style="margin-left: auto; color: var(--primary); font-size: 0.85rem; font-weight: 600;">Read →</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Newsletter Banner -->
+      <div class="card p-8 text-center" style="background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-secondary) 100%); border-radius: 16px; border: 1px solid var(--border-color); max-width: 800px; margin: 0 auto;">
+        <span class="badge badge-primary mb-3">Weekly Executive Digest</span>
+        <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 12px;">Get High-Yield Rental Market Intelligence</h3>
+        <p style="color: var(--text-secondary); max-width: 540px; margin: 0 auto 24px; font-size: 0.95rem;">
+          Join 28,000+ investors, landlords, and residents who receive verified rent price trendlines, off-market opportunities, and statutory legal alerts every Tuesday.
+        </p>
+        <form class="flex justify-center gap-3" style="max-width: 480px; margin: 0 auto;" onsubmit="event.preventDefault(); showToast('Subscribed to Resida Editorial Digest!', 'success'); this.reset();">
+          <input type="email" placeholder="Enter your business email" required style="padding: 12px 18px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-primary); flex-grow: 1;">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../pages/index.html" class="brand-logo mb-4" style="display: inline-flex;">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <span class="brand-text" style="color: #ffffff;">Resida<span>.</span></span>
+          </a>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+            The premier verified residential rental property platform. Connecting discerning tenants with authenticated residences with digital ease, transparency, and trust.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Navigation</h5>
+          <div class="footer-links">
+            <a href="../pages/index.html">Home (Contemporary)</a>
+            <a href="../pages/home-2.html">Home 2 (Skyline Living)</a>
+            <a href="../pages/browse.html">Browse All Rentals</a>
+            <a href="../pages/compare.html">Property Comparison</a>
+            <a href="../pages/submit-listing.html">List Your Property</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services & Hub</h5>
+          <div class="footer-links">
+            <a href="../pages/services.html">Our Services</a>
+            <a href="../pages/service-details.html">150-Point Inspection</a>
+            <a href="../pages/about.html">About Resida</a>
+            <a href="../pages/blog.html">Rental Guides & News</a>
+            <a href="../pages/contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Stay Updated</h5>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 12px;">Subscribe for exclusive off-market rental drops and city market guides.</p>
+          <form class="flex gap-2" action="#" method="POST">
+            <input type="email" placeholder="Your email address" required style="padding: 10px 14px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #fff; font-size: 0.88rem; width: 100%;">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Resida Properties Inc. All rights reserved. Registered Tenancy Platform.</div>
+        <div class="flex gap-4">
+          <a href="#" style="color: #94a3b8;">Privacy Policy</a>
+          <a href="#" style="color: #94a3b8;">Terms of Service</a>
+          <a href="#" style="color: #94a3b8;">Security & Escrow</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

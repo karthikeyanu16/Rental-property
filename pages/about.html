@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Resida | Company & Mission | Resida Rentals</title>
+  <meta name="description" content="Discover, compare, and lease verified residential rental properties with instant digital contracts, zero hidden fees, and dedicated resident concierge.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container flex-between items-center">
+      <div class="topbar-tools">
+        <span class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +1 (800) 555-NEST
+        </span>
+        <span class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          concierge@resida-rentals.com
+        </span>
+      </div>
+      <div class="topbar-tools">
+        <span>Verified Escrow Protection Guarantee</span>
+        <span class="topbar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          24/7 Tenancy Support
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../pages/index.html" class="brand-logo" aria-label="Resida Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="brand-text">Resida<span>.</span></span>
+        </a>
+
+        <!-- Main Navigation Links: Exactly 7 Clear Visible Items -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <a href="../pages/index.html" class="nav-link ">Home Page 1</a>
+          <a href="../pages/home-2.html" class="nav-link ">Home Page 2</a>
+          <a href="../pages/properties.html" class="nav-link ">Properties</a>
+          <a href="../pages/services.html" class="nav-link ">Services</a>
+          <a href="../pages/about.html" class="nav-link active">About</a>
+          <a href="../pages/blog.html" class="nav-link ">Blogs</a>
+          <a href="../pages/contact.html" class="nav-link ">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button id="rtl-toggle-btn" class="rtl-toggle-btn" title="Toggle Right-to-Left Layout" aria-label="Toggle RTL">RTL</button>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <span id="theme-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+          </button>
+          <a href="../pages/properties.html" class="btn btn-primary btn-sm header-cta">Explore Properties</a>
+          <button id="mobile-toggle-btn" class="mobile-toggle" aria-label="Open Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
+  <aside id="mobile-drawer" class="mobile-drawer">
+    <div class="flex-between items-center mb-6">
+      <span class="brand-text">Resida<span>.</span></span>
+      <button id="close-drawer-btn" class="btn-icon" aria-label="Close Navigation">✕</button>
+    </div>
+    <nav class="flex flex-col gap-2">
+      <a href="../pages/index.html" class="nav-link ">Home Page 1</a>
+      <a href="../pages/home-2.html" class="nav-link ">Home Page 2</a>
+      <a href="../pages/properties.html" class="nav-link ">Properties</a>
+      <a href="../pages/services.html" class="nav-link ">Services</a>
+      <a href="../pages/about.html" class="nav-link active">About</a>
+      <a href="../pages/blog.html" class="nav-link ">Blogs</a>
+      <a href="../pages/contact.html" class="nav-link ">Contact</a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="../pages/properties.html" class="btn btn-primary" style="width: 100%;">Explore Properties</a>
+    </div>
+  </aside>
+
+
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section section-bg-surface" style="padding-top: 60px; padding-bottom: 60px; border-bottom: 1px solid var(--border-color);">
+      <div class="container text-center">
+        <div class="section-subtitle">Our Story & Heritage</div>
+        <h1 class="section-title">Reimagining the Residential Tenancy Experience</h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+          Founded on the principle that renting a home should inspire dignity, transparency, and architectural joy, Resida is building the global gold standard for residential leasing.
+        </p>
+      </div>
+    </section>
+
+    <!-- HEADQUARTERS & STORY -->
+    <section class="section section-bg-muted">
+      <div class="container">
+        <div class="feature-split">
+          <div class="feature-media">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80" alt="Resida headquarters architectural design office" class="feature-img" width="1000" height="687">
+          </div>
+          <div>
+            <div class="section-subtitle">Born in 2021</div>
+            <h2 class="section-title">From Frustration to Fiduciary Tenancy Standards</h2>
+            <p>
+              In 2021, our founders set out to dismantle the legacy rental market: deceptive listing bait-and-switches, predatory withheld deposits, and zero responsiveness when essential heating failed.
+            </p>
+            <p>
+              We constructed a technology platform grounded in mandatory on-site physical inspections, legal deposit escrow protection, and a white-glove human concierge team that treats every renter as a valued resident, not a transaction.
+            </p>
+            <div class="grid grid-3 text-center mt-6">
+              <div class="stat-card flex-col">
+                <div class="stat-val" style="color: var(--primary);">40+</div>
+                <div class="stat-lbl">Major Metros</div>
+              </div>
+              <div class="stat-card flex-col">
+                <div class="stat-val" style="color: var(--accent);">$1.2B</div>
+                <div class="stat-lbl">Leases Managed</div>
+              </div>
+              <div class="stat-card flex-col">
+                <div class="stat-val" style="color: var(--secondary);">120+</div>
+                <div class="stat-lbl">Team Members</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODERN WORKSPACE & CULTURE -->
+    <section class="section section-bg-surface">
+      <div class="container">
+        <div class="feature-split">
+          <div>
+            <div class="section-subtitle">Collaborative Culture</div>
+            <h2 class="section-title">Passionate Specialists in Architecture, Law & Hospitality</h2>
+            <p>
+              Our multidisciplinary team combines licensed building surveyors, real estate attorneys, software architects, and five-star hospitality veterans. We believe great service begins with a caring, empowered team culture.
+            </p>
+            <div class="check-list">
+              <div class="check-item"><div class="check-icon">✓</div><div><strong>Licensed Building Inspectors:</strong> Dedicated field surveyors inspecting properties in person every day.</div></div>
+              <div class="check-item"><div class="check-icon">✓</div><div><strong>Tenant Legal Protections:</strong> Certified attorneys ensuring lease terms comply with tenant rights.</div></div>
+              <div class="check-item"><div class="check-icon">✓</div><div><strong>24/7 Human Concierge:</strong> Responsive customer success advisors located in every active metro.</div></div>
+            </div>
+          </div>
+          <div class="feature-media">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Resida team collaborating in modern conference room" class="feature-img" width="1000" height="687">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="section section-bg-muted">
+      <div class="container">
+        <div class="feature-split">
+          <div class="feature-media">
+            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1000&q=80" alt="Sustainable modern residential living community" class="feature-img" width="1000" height="687">
+          </div>
+          <div>
+            <div class="section-subtitle">Our Vision</div>
+            <h2 class="section-title">Homes That Nurture Well-Being & Environmental Harmony</h2>
+            <p>
+              We actively prioritize energy-efficient buildings, certified green communities, solar infrastructure, and properties within walkable distance of clean rapid transit.
+            </p>
+            <p>
+              By setting high structural benchmarks, we incentivize property owners to upgrade insulation, install heat pumps, and transition to smart, eco-conscious amenities.
+            </p>
+            <a href="browse.html" class="btn btn-primary mt-4">Explore Eco-Certified Rentals</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & TEAM -->
+    <section class="section section-bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">Executive Team</div>
+          <h2 class="section-title">Meet the Leaders Guiding Resida</h2>
+          <p class="section-desc">Decades of combined experience in high-end real estate, technology, and tenancy advocacy.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <!-- Member 1 -->
+          <div class="step-card" style="text-align: center; padding: 24px;">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Marcus Vance" style="width: 120px; height: 120px; border-radius: 9999px; object-fit: cover; margin: 0 auto 16px auto;" width="120" height="120">
+            <h4 style="margin-bottom: 4px;">Marcus Vance</h4>
+            <div style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 8px;">Founder & Chief Executive</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Former senior partner in metropolitan residential development with 18 years in urban asset management.</p>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="step-card" style="text-align: center; padding: 24px;">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=300&q=80" alt="Elena Rostova" style="width: 120px; height: 120px; border-radius: 9999px; object-fit: cover; margin: 0 auto 16px auto;" width="120" height="120">
+            <h4 style="margin-bottom: 4px;">Elena Rostova</h4>
+            <div style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 8px;">Head of Leasing Operations</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Oversees verified property inventory and broker partnerships across 40 metropolitan regions.</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="step-card" style="text-align: center; padding: 24px;">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=300&q=80" alt="Julian Thorne" style="width: 120px; height: 120px; border-radius: 9999px; object-fit: cover; margin: 0 auto 16px auto;" width="120" height="120">
+            <h4 style="margin-bottom: 4px;">Julian Thorne</h4>
+            <div style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 8px;">Chief Property Surveyor</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Chartered structural engineer directing our proprietary 150-Point Physical Inspection Protocols.</p>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="step-card" style="text-align: center; padding: 24px;">
+            <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=300&q=80" alt="Chloe Bennett" style="width: 120px; height: 120px; border-radius: 9999px; object-fit: cover; margin: 0 auto 16px auto;" width="120" height="120">
+            <h4 style="margin-bottom: 4px;">Chloe Bennett</h4>
+            <div style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 8px;">VP Resident Experience</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Hospitality specialist maintaining our 98.4% tenant satisfaction and on-demand concierge desk.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIELD OPERATIONS & WORK WITH CLIENTS -->
+    <section class="section section-bg-muted">
+      <div class="container">
+        <div class="feature-split">
+          <div>
+            <div class="section-subtitle">On-The-Ground Presence</div>
+            <h2 class="section-title">Human Warmth Behind Modern Digital Convenience</h2>
+            <p>
+              Technology streamlines paperwork, but human care creates homes. Our field advisors meet tenants at the front door, walk through every lighting circuit and thermostat setting, and remain your dedicated point of contact throughout your entire lease.
+            </p>
+            <a href="contact.html" class="btn btn-primary mt-4">Contact Our Local Team</a>
+          </div>
+          <div class="feature-media">
+            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1000&q=80" alt="Resida specialist warmly greeting tenant at residence entrance" class="feature-img" width="1000" height="687">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../pages/index.html" class="brand-logo mb-4" style="display: inline-flex;">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <span class="brand-text" style="color: #ffffff;">Resida<span>.</span></span>
+          </a>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+            The premier verified residential rental property platform. Connecting discerning tenants with authenticated residences with digital ease, transparency, and trust.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Navigation</h5>
+          <div class="footer-links">
+            <a href="../pages/index.html">Home (Contemporary)</a>
+            <a href="../pages/home-2.html">Home 2 (Skyline Living)</a>
+            <a href="../pages/browse.html">Browse All Rentals</a>
+            <a href="../pages/compare.html">Property Comparison</a>
+            <a href="../pages/submit-listing.html">List Your Property</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services & Hub</h5>
+          <div class="footer-links">
+            <a href="../pages/services.html">Our Services</a>
+            <a href="../pages/service-details.html">150-Point Inspection</a>
+            <a href="../pages/about.html">About Resida</a>
+            <a href="../pages/blog.html">Rental Guides & News</a>
+            <a href="../pages/contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Stay Updated</h5>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 12px;">Subscribe for exclusive off-market rental drops and city market guides.</p>
+          <form class="flex gap-2" action="#" method="POST">
+            <input type="email" placeholder="Your email address" required style="padding: 10px 14px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #fff; font-size: 0.88rem; width: 100%;">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Resida Properties Inc. All rights reserved. Registered Tenancy Platform.</div>
+        <div class="flex gap-4">
+          <a href="#" style="color: #94a3b8;">Privacy Policy</a>
+          <a href="#" style="color: #94a3b8;">Terms of Service</a>
+          <a href="#" style="color: #94a3b8;">Security & Escrow</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

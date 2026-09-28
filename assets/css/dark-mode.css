@@ -1,0 +1,41 @@
+/* RESIDA DARK MODE */
+[data-theme="dark"] {
+  --bg-body: #0b1120;
+  --bg-surface: #131c31;
+  --bg-surface-elevated: #1e293b;
+  --bg-muted: #1a243c;
+  --bg-card: #131c31;
+  --bg-header: rgba(19, 28, 49, 0.94);
+  --text-main: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  --border-color: #24304f;
+  --border-subtle: #1e293b;
+  --border-focus: #38bdf8;
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  --primary-light: rgba(2, 132, 199, 0.2);
+  --accent-light: rgba(16, 185, 129, 0.2);
+  --accent-amber-light: rgba(245, 158, 11, 0.2);
+  --accent-rose-light: rgba(244, 63, 94, 0.2);
+}
+[data-theme="dark"] .hero-section { background: linear-gradient(180deg, #0f172a 0%, var(--bg-body) 100%); }
+[data-theme="dark"] .property-fav-btn { background: rgba(19, 28, 49, 0.9); color: #94a3b8; }
+[data-theme="dark"] .search-field input,
+[data-theme="dark"] .search-field select,
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="number"],
+[data-theme="dark"] input[type="tel"],
+[data-theme="dark"] input[type="date"],
+[data-theme="dark"] select,
+[data-theme="dark"] textarea { background: #1a243c; color: #f8fafc; border-color: #24304f; }
+[data-theme="dark"] .topbar { background: #060911; }
+[data-theme="dark"] .skeleton { background: linear-gradient(90deg, #1a243c 25%, #24304f 50%, #1a243c 75%); }
+[data-theme="dark"] .site-footer { background: #050811; border-top-color: #1a243c; }
+[data-theme="dark"] .compare-table th:first-child,
+[data-theme="dark"] .compare-table td:first-child { background: #1a243c; }

@@ -1,0 +1,6 @@
+# Resida Rental Property Listing Platform
+User-agent: *
+Allow: /
+Disallow: /pages/dashboard.html
+
+Sitemap: https://resida-rentals.com/sitemap.xml

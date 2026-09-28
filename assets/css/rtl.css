@@ -1,0 +1,22 @@
+/* RESIDA RTL */
+[dir="rtl"] { direction: rtl; text-align: right; }
+[dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+[dir="rtl"] .section-header.text-start { text-align: right; margin-right: 0; }
+[dir="rtl"] .hero-float-card.top-right { right: auto; left: -20px; }
+[dir="rtl"] .hero-float-card.bottom-left { left: auto; right: -20px; }
+[dir="rtl"] .property-badges { left: auto; right: 14px; }
+[dir="rtl"] .property-fav-btn { right: auto; left: 14px; }
+[dir="rtl"] .property-price-tag { left: auto; right: 14px; }
+[dir="rtl"] .feature-badge-box { right: auto; left: -20px; }
+[dir="rtl"] .footer-links a:hover { padding-left: 0; padding-right: 4px; }
+[dir="rtl"] .mobile-drawer { right: auto; left: -320px; border-left: none; border-right: 1px solid var(--border-color); transition: left var(--transition-normal); }
+[dir="rtl"] .mobile-drawer.open { right: auto; left: 0; }
+[dir="rtl"] .toast-container { right: auto; left: 24px; }
+[dir="rtl"] .toast { animation: toastInRtl 0.3s ease forwards; }
+@keyframes toastInRtl { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+[dir="rtl"] .dashboard-sidebar { border-right: none; border-left: 1px solid var(--border-color); }
+[dir="rtl"] .dashboard-table th, [dir="rtl"] .dashboard-table td { text-align: right; }
+[dir="rtl"] .cost-breakdown-table td:last-child { text-align: left; }
+[dir="rtl"] .compare-table { text-align: right; }
+[dir="rtl"] .compare-table th, [dir="rtl"] .compare-table td { border-right: none; border-left: 1px solid var(--border-color); }
+[dir="rtl"] .compare-table th:last-child, [dir="rtl"] .compare-table td:last-child { border-left: none; }
